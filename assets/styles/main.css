@@ -1,0 +1,11 @@
+:root {
+  --font: 'Roboto', sans-serif;
+  --color-accent: #a18a68;
+  --color-black: #000000;
+  --color-dark-gray: #707070;
+  --color-gray: #d8d8d8;
+}
+
+body {
+  font-family: var(--font-family);
+}
