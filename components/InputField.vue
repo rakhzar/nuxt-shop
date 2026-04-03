@@ -23,10 +23,10 @@ const data = defineModel<string>();
 }
 
 .gray {
-  border-bottom: 1px solid var(--color-dark-gray);
+  border-bottom: 1px solid var(--color-gray);
 }
 
 .black {
-  border-bottom: 1px solid var(--color-gray);
+  border-bottom: 1px solid var(--color-dark-gray);
 }
 </style>

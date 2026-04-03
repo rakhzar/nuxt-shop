@@ -1,7 +1,8 @@
+<script setup lang="ts"></script>
+
 <template>
   <div>
-    <div>header</div>
     <slot />
-    <div>footer</div>
+    <LayoutFooter />
   </div>
 </template>
