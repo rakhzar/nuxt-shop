@@ -13,24 +13,13 @@ function goHome() {
 <template>
   <div class="error__wrapper">
     <h1>{{ error.status }} ошибка</h1>
-    <div
-      v-if="error.status === 404"
-      class="error__message"
-    >
+    <div v-if="error.status === 404" class="error__message">
       Страница не найдена, попробуйте перейти на главную страницу
     </div>
-    <div
-      v-else
-      class="error__message"
-    >
+    <div v-else class="error__message">
       {{ error.statusText }}
     </div>
-    <ActionButton
-      color="ghost"
-      @click="goHome"
-    >
-      На главную
-    </ActionButton>
+    <ActionButton color="ghost" @click="goHome">На главную</ActionButton>
   </div>
 </template>
 

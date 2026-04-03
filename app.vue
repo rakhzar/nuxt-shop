@@ -1,8 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import type { LayoutKey } from '#app';
+
+const name = ref<LayoutKey>('auth');
+</script>
 
 <template>
-  <div>
-    Hello!
+  <NuxtLayout :name="name">
     <NuxtPage />
-  </div>
+  </NuxtLayout>
 </template>
