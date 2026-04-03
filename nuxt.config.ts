@@ -7,6 +7,6 @@ export default defineNuxtConfig({
       apiurl: '',
     },
   },
-  modules: ['@nuxt/eslint', '@nuxt/fonts', '@nuxt/image', '@nuxt/scripts'],
+  modules: ['@nuxt/eslint', '@nuxt/fonts', '@nuxt/image', '@nuxt/scripts', '@nuxt/icon'],
   css: ['~/assets/styles/main.css'],
 });
