@@ -4,25 +4,9 @@
       <IconLogo />
     </NuxtLink>
     <div class="header__content">
-      <div class="header__menu">
-        <NuxtLink to="/catalog">Магазин</NuxtLink>
-        <NuxtLink to="/about">О нас</NuxtLink>
-      </div>
+      <HeaderMenu />
       <div class="header__hr"></div>
-      <div class="header__icons">
-        <NuxtLink to="#">
-          <Icon name="icons:search" size="21px" />
-        </NuxtLink>
-        <NuxtLink to="/cart">
-          <Icon name="icons:cart" size="21px" />
-        </NuxtLink>
-        <NuxtLink to="/favorites">
-          <Icon name="icons:favorite" size="21px" />
-        </NuxtLink>
-        <NuxtLink to="/account">
-          <Icon name="icons:user" size="21px" />
-        </NuxtLink>
-      </div>
+      <HeaderIcons />
     </div>
   </div>
 </template>
@@ -44,28 +28,10 @@
   align-items: center;
 }
 
-.header__menu {
-  display: flex;
-  gap: 60px;
-  align-items: center;
-}
-
-.header__menu a {
-  line-height: 27px;
-  color: var(--color-black);
-  text-decoration: none;
-}
-
 .header__hr {
   border-left: 1px solid var(--color-dark-gray);
   height: 17px;
   align-items: flex-start;
   margin-top: 4px;
-}
-
-.header__icons {
-  display: flex;
-  gap: 40px;
-  align-items: center;
 }
 </style>
