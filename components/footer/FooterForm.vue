@@ -14,6 +14,7 @@
 
 .footer__form input {
   min-width: 380px;
+  padding-left: 15px;
 }
 
 .footer__form input::placeholder {
