@@ -24,14 +24,13 @@
 .header__content {
   display: flex;
   gap: 60px;
-  padding-bottom: 20px;
   align-items: center;
 }
 
 .header__hr {
   border-left: 1px solid var(--color-dark-gray);
   height: 17px;
-  align-items: flex-start;
-  margin-top: 4px;
+  align-self: flex-start;
+  margin: 4px 0 6px 0;
 }
 </style>
