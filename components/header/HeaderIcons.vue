@@ -21,4 +21,13 @@
   gap: 40px;
   align-items: center;
 }
+
+.header__icons a {
+  padding-bottom: 24px;
+  border-bottom: 2px solid transparent;
+}
+
+.header__icons a.router-link-active {
+  border-bottom: 2px solid var(--color-black);
+}
 </style>
