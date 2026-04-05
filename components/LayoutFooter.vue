@@ -26,7 +26,7 @@
 }
 
 .footer__top ul a:hover {
-  @apply text-[var(--color-dark)];
+  @apply hover:text-[var(--color-dark)];
 }
 
 .footer__buttom {
