@@ -8,19 +8,12 @@
 
 <style scoped>
 ul {
-  list-style: none;
-  display: flex;
-  padding: 0;
-  gap: 30px;
+  @apply list-none flex p-0 gap-[30px];
 }
 ul a {
-  font-weight: 400;
-  font-size: 16px;
-  text-transform: uppercase;
-  color: var(--color-dark-gray);
-  text-decoration: none;
+  @apply font-normal text-base uppercase text-[var(--color-dark-gray)] no-underline;
 }
 ul a:hover {
-  color: var(--color-dark);
+  @apply hover:text-[var(--color-dark)];
 }
 </style>
