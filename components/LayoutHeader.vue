@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <header class="header">
     <NuxtLink to="/">
       <IconLogo />
     </NuxtLink>
@@ -8,10 +8,10 @@
       <div class="header__hr"></div>
       <HeaderIcons />
     </div>
-  </div>
+  </header>
 </template>
 
-<style scoped>
+<style>
 .header {
   margin: 0 auto;
   max-width: 1248px;

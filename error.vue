@@ -13,9 +13,7 @@ function goHome() {
 <template>
   <div class="error__wrapper">
     <h1>{{ error.status }} ошибка</h1>
-    <div v-if="error.status === 404" class="error__message">
-      Страница не найдена, попробуйте перейти на главную страницу
-    </div>
+    <div v-if="error.status === 404" class="error__message">Страница не найдена, попробуйте перейти на главную страницу</div>
     <div v-else class="error__message">
       {{ error.statusText }}
     </div>
