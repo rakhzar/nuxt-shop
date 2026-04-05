@@ -18,7 +18,7 @@
 }
 
 .footer hr {
-  @apply boder-b border-[var(--color-gray)];
+  @apply border-b-2 border-[var(--color-gray)];
 }
 
 .footer__top {
