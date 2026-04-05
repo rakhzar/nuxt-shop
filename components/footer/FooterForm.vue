@@ -9,23 +9,18 @@
 
 <style scoped>
 .footer__form {
-  position: relative;
+  @apply relative;
 }
 
 .footer__form input {
-  min-width: 380px;
-  padding-left: 15px;
+  @apply min-w-[380px] pl-[15px];
 }
 
 .footer__form input::placeholder {
-  color: var(--color-dark-gray);
+  @apply text-[var(--color-dark-gray)];
 }
 
 .footer__subscribe {
-  position: absolute;
-  right: 0;
-  top: 13px;
-  background: none;
-  border: none;
+  @apply right-0 top-[13px] bg-transparent border-0;
 }
 </style>
