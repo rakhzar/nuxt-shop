@@ -7,26 +7,18 @@
 
 <style>
 .header__menu {
-  display: flex;
-  gap: 60px;
-  align-items: center;
+  @apply flex gap-[60px] items-center;
 }
 
 .header__menu a {
-  font-size: 16px;
-  line-height: 27px;
-  color: var(--color-black);
-  text-decoration: none;
-  padding-bottom: 24px;
-  border-bottom: 2px solid transparent;
-  transition: color 0.2s;
+  @apply text-[16px] leading-[27px] text-[var(--color-black)] no-underline pb-6 border-b-2 border-transparent transition-colors duration-200;
 }
 
 .header__menu a:hover {
-  color: var(--color-dark-gray);
+  @apply hover:text-[var(--color-dark-gray)];
 }
 
 .header__menu a.router-link-active {
-  border-bottom: 2px solid var(--color-black);
+  @apply border-b-[var(--color-black)];
 }
 </style>
