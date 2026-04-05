@@ -12,6 +12,11 @@ export default defineNuxtConfig({
       apiurl: '',
     },
   },
+  app: {
+    head: {
+      link: [{ rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css' }],
+    },
+  },
   icon: {
     customCollections: [
       {
