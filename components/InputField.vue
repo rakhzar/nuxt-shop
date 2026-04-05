@@ -7,10 +7,10 @@ const data = defineModel<string>();
 </script>
 
 <template>
-  <input v-model="data" class="input" :class="variant" />
+  <input v-model="data" :class="[$style[variant], $style.input]" />
 </template>
 
-<style scoped>
+<style module>
 .input {
   padding: 12px 0;
   background: none;
