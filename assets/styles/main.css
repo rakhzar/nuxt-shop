@@ -1,5 +1,5 @@
-:root {
-  --font: 'Roboto', sans-serif;
+@theme {
+  --font-roboto: 'Roboto', sans-serif;
   --color-accent: #a18a68;
   --color-black: #000000;
   --color-black-hover: #222222;
@@ -8,24 +8,22 @@
   --color-gray: #d8d8d8;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-}
+@tailwind base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+  }
 
-body {
-  font-family: var(--font);
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  body {
+    @apply font-roboto;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-h1 {
-  font-size: 33px;
-  font-weight: 500;
-  line-height: 43px;
-  text-align: center;
-  color: var(--color-black);
+  h1 {
+    @apply text-[33px] font-medium leading-[43px] text-center text-black;
+  }
 }
