@@ -1,11 +1,11 @@
 <template>
-  <div class="header__menu">
+  <nav class="header__menu">
     <NuxtLink to="/catalog">Магазин</NuxtLink>
     <NuxtLink to="/about">О нас</NuxtLink>
-  </div>
+  </nav>
 </template>
 
-<style scoped>
+<style>
 .header__menu {
   display: flex;
   gap: 60px;
@@ -19,6 +19,7 @@
   text-decoration: none;
   padding-bottom: 24px;
   border-bottom: 2px solid transparent;
+  transition: color 0.2s;
 }
 
 .header__menu a:hover {
