@@ -26,5 +26,5 @@ export default defineNuxtConfig({
     ],
   },
   modules: ['@nuxt/eslint', '@nuxt/fonts', '@nuxt/image', '@nuxt/scripts', '@nuxt/icon', '@nuxtjs/tailwindcss'],
-  css: ['~/assets/styles/main.css', '~/assets/styles/components.css'],
+  css: ['~/assets/styles/main.css'],
 });
