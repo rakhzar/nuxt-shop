@@ -17,15 +17,14 @@
 
 <style scoped>
 .footer__social {
-  display: flex;
-  gap: 30px;
+  @apply flex gap-[30px];
 }
 
 .footer__social a {
-  color: var(--color-dark-gray);
+  @apply text-[var(--color-dark-gray)];
 }
 
 .footer__social a:hover {
-  color: var(--color-dark);
+  @apply hover:text-[var(--color-dark)];
 }
 </style>
