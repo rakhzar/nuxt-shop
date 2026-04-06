@@ -20,4 +20,8 @@ ul a {
   color: var(--color-dark-gray);
   text-decoration: none;
 }
+
+ul a:hover {
+  color: var(--color-dark);
+}
 </style>
