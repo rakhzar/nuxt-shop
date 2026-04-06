@@ -13,12 +13,10 @@
 
 <style scoped>
 .header {
-  padding: 0 16px;
-  margin: 0 auto;
+  margin: 48px auto 17px;
   max-width: 1248px;
   display: flex;
   justify-content: space-between;
-  margin-top: 48px;
   border-bottom: 1px solid var(--color-gray);
 }
 
