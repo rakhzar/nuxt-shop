@@ -1,35 +1,30 @@
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
+  compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
-  routeRules: {
-    '/about': { prerender: true },
-    '/': { swr: true },
-    '/catalog/**': { swr: 3600 },
-  },
   runtimeConfig: {
-    token: '',
+    token: "",
     public: {
-      apiurl: '',
+      apiurl: process.env.NUXT_PUBLIC_API_URL || "http://localhost:3000/api",
     },
   },
   postcss: {
     plugins: {
-      'postcss-nested': {},
+      "postcss-nested": {},
     },
   },
   app: {
     head: {
-      link: [{ rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css' }],
+      link: [{ rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" }],
     },
   },
   icon: {
     customCollections: [
       {
-        prefix: 'icons',
-        dir: './assets/icons',
+        prefix: "icons",
+        dir: "./assets/icons",
       },
     ],
   },
-  modules: ['@nuxt/eslint', '@nuxt/fonts', '@nuxt/image', '@nuxt/scripts', '@nuxt/icon'],
-  css: ['~/assets/styles/main.css'],
+  modules: ["@nuxt/eslint", "@nuxt/fonts", "@nuxt/image", "@nuxt/scripts", "@nuxt/icon"],
+  css: ["~/assets/styles/main.css"],
 });
