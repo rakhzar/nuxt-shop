@@ -19,6 +19,7 @@ const data = defineModel<string>();
   color: var(--color-black);
   font-size: 16px;
   font-weight: 400;
+  padding-left: 15px;
 }
 .input::placeholder {
   color: var(--color-dark-gray);
