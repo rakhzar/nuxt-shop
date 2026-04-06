@@ -17,7 +17,8 @@
   line-height: 27px;
   color: var(--color-black);
   text-decoration: none;
-  padding-bottom: 48px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid transparent;
 }
 
 .header__menu a:hover {

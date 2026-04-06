@@ -23,7 +23,8 @@
 }
 
 .header__icons a {
-  padding-bottom: 48px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid transparent;
 }
 
 .header__icons a.router-link-active {
