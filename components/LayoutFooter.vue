@@ -14,22 +14,23 @@
 
 <style scoped>
 .footer {
-  @apply mx-auto max-w-[1248px] flex flex-col gap-[50px];
+  padding: 0 16px;
+  margin: 0 auto;
+  max-width: 1248px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .footer hr {
-  @apply border-b-2 border-[var(--color-gray)];
+  border: none;
+  border-bottom: 1px solid var(--color-gray);
+  height: 1px;
 }
 
-.footer__top {
-  @apply flex justify-between;
-}
-
-.footer__top ul a:hover {
-  @apply hover:text-[var(--color-dark)];
-}
-
+.footer__top,
 .footer__buttom {
-  @apply flex justify-between;
+  display: flex;
+  justify-content: space-between;
 }
 </style>

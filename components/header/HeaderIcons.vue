@@ -17,14 +17,16 @@
 
 <style scoped>
 .header__icons {
-  @apply flex gap-[40px] items-center;
+  display: flex;
+  gap: 40px;
+  align-items: center;
 }
 
 .header__icons a {
-  @apply pb-6 border-b-2 border-transparent;
+  padding-bottom: 48px;
 }
 
 .header__icons a.router-link-active {
-  @apply border-b-[var(--color-black)];
+  border-bottom: 1px solid var(--color-black);
 }
 </style>
