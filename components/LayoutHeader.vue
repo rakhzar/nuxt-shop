@@ -27,7 +27,7 @@
 }
 
 .header__hr {
-  border-left: 1px solid var(--color-dark-gray);
+  border-left: 1px solid var(--color-gray);
   height: 17px;
   align-self: flex-start;
   margin-top: 4px;
