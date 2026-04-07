@@ -13,6 +13,7 @@
 
 <style scoped>
 .header {
+  padding: 0 16px;
   margin: 48px auto 17px;
   max-width: 1248px;
   display: flex;
