@@ -27,7 +27,7 @@ const product: Product = {
   price: 20,
   short_description: 'Элегантные золотистые серьги-кольца',
   long_description: 'Отлично подойдут к любому гардеробу. Чистое золото высокой пробы, которое не оставит вас равнодушными к качеству изделия.',
-  sku: '12',
+  sku: 12,
   discount: 0,
   images: ['/images/jewelry/lira1.jpg', '/images/jewelry/lira2.jpg', '/images/jewelry/lira3.jpg', '/images/jewelry/lira4.jpg'],
   category_id: 1,
