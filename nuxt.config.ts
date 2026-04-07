@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     token: process.env.NUXT_TOKEN,
     public: {
       apiurl: process.env.NUXT_PUBLIC_APIURL || 'http://localhost:3000/api',
+      imageurl: process.env.NUXT_PUBLIC_IMAGEURL || 'http://localhost:3000',
     },
   },
   vite: {
