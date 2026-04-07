@@ -42,9 +42,7 @@ const image = computed(() => `url(${config.public.imageurl}${product.images[0]})
 }
 
 .card__image:hover {
-  box-shadow: 0 4px 12px rgba(201, 185, 154, 0.3);
-  border: 2px solid;
-  border-color: var(--color-dark-gray-hover);
+  border: 2px solid var(--color-dark-gray-hover);
 }
 
 .card__footer {
