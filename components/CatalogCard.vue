@@ -7,7 +7,7 @@ const config = useRuntimeConfig();
 
 <template>
   <NuxtLink class="card" to="/">
-    <div class="card__image" :style="{ background: `url(${config.public.imageurl}${product.images[0]}) lightgray 50% / cover no-repeat;` }">
+    <div class="card__image" :style="{ background: `url(${config.public.imageurl}${product.images[0]}) lightgray 50% / cover no-repeat` }">
       <span class="card__discount">-{{ product.discount }}%</span>
     </div>
     <div class="card__name">{{ product.name }}</div>
@@ -31,7 +31,7 @@ const config = useRuntimeConfig();
   min-width: 300px;
   border-radius: 8px;
   padding: 16px;
-  transition: all 0.5s ease;
+  transition: all 1s ease;
   border-radius: 8px;
 }
 
