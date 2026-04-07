@@ -23,7 +23,6 @@ const image = computed(() => `url(${config.public.imageurl}${product.images[0]})
   display: flex;
   flex-direction: column;
   gap: 24px;
-  max-width: 300px;
   width: 100%;
   text-decoration: none;
 }
