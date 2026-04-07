@@ -23,7 +23,7 @@
 }
 
 .header__icons a {
-  padding-bottom: 17px;
+  padding-bottom: 48px;
   border-bottom: 1px solid transparent;
 }
 

@@ -17,7 +17,7 @@
   line-height: 27px;
   color: var(--color-black);
   text-decoration: none;
-  padding-bottom: 17px;
+  padding-bottom: 48px;
   border-bottom: 1px solid transparent;
 }
 
