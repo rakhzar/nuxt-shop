@@ -6,13 +6,13 @@ export interface Product {
   price: number;
   short_description: string;
   long_description: string;
-  sku: number;
+  sku: string;
   discount: number;
   images: string[];
   category_id: number;
   category: Category;
-  created_at?: Date;
-  updated_at?: Date;
+  created_at: string;
+  updated_at: string;
 }
 
 export interface GetProductsResponse {
