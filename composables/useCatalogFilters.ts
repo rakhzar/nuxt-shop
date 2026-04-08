@@ -13,7 +13,7 @@ export function useCatalogFilters() {
 
   const changeRoute = useDebounceFn((category_id, search) => {
     router.replace({ query: { category_id: category_id.value, search: search.value } });
-  }, 1000);
+  }, 200);
 
   const query = computed(() => ({
     limit: route.query.limit ?? 20,
