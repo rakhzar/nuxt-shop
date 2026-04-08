@@ -41,5 +41,6 @@ const { options } = defineProps<{
   margin: 0;
   width: 100%;
   font-family: inherit;
+  border-radius: 4px;
 }
 </style>
