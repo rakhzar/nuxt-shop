@@ -40,10 +40,6 @@ const image = computed(() => `url(${config.public.imageurl}${product.images[0]})
   background-image: v-bind(image);
 }
 
-.card__image:hover {
-  border: 2px solid var(--color-dark-gray-hover);
-}
-
 .card__footer {
   display: flex;
   flex-direction: column;
