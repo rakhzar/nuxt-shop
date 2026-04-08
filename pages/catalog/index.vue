@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import type { GetProductsResponse } from '~/interfaces/product.interface';
 
-const { category_id, query } = useCatalogFilters();
 const config = useRuntimeConfig();
+const { category_id, search, query } = useCatalogFilters();
 const { options: categoriesSelect } = await useCategoriesSelect(config.public.apiurl);
 
 const { data: productsData } = await useFetch<GetProductsResponse>(config.public.apiurl + '/products', {
@@ -16,6 +16,10 @@ const { data: productsData } = await useFetch<GetProductsResponse>(config.public
     <h1 class="left">Католог товаров</h1>
     <div class="catalog">
       <div class="catalog__filter">
+        <div class="catalog__search">
+          <InputField v-model="search" variant="gray" placeholder="Поиск..." />
+          <Icon name="icons:search" size="19px" />
+        </div>
         <SelectField v-model="category_id" :options="categoriesSelect" />
       </div>
       <div class="catalog__grid">
@@ -32,7 +36,20 @@ const { data: productsData } = await useFetch<GetProductsResponse>(config.public
 }
 
 .catalog__filter {
-  width: 260px;
+  width: 267px;
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+}
+
+.catalog__search {
+  position: relative;
+}
+
+.catalog__search .iconify {
+  position: absolute;
+  top: 12px;
+  right: 0px;
 }
 
 .catalog__grid {
