@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { variant } = defineProps<{
-  variant: "gray" | "black";
+  variant: 'gray' | 'black';
 }>();
 
 const data = defineModel<string>();
@@ -12,12 +12,11 @@ const data = defineModel<string>();
 
 <style module>
 .input {
-  width: 398px;
+  width: 100%;
   padding: 12px 0;
   background: none;
   border: none;
   color: var(--color-black);
-  padding-left: 15px;
 }
 .input::placeholder {
   color: var(--color-dark-gray);
