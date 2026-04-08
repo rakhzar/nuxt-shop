@@ -36,6 +36,6 @@ export default defineNuxtConfig({
       },
     ],
   },
-  modules: ['@nuxt/eslint', '@nuxt/fonts', '@nuxt/image', '@nuxt/scripts', '@nuxt/icon'],
+  modules: ['@nuxt/eslint', '@nuxt/fonts', '@nuxt/image', '@nuxt/scripts', '@nuxt/icon', '@pinia/nuxt'],
   css: ['~/assets/styles/main.css'],
 });
