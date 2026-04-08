@@ -6,6 +6,12 @@ const config = useRuntimeConfig();
 const API_URL = config.public.apiurl;
 const category_id = ref('');
 
+const query = computed(() => ({
+  limit: 20,
+  offset: 0,
+  category_id: category_id.value || undefined,
+}));
+
 const { data } = await useFetch<GetCategoriesResponse>(API_URL + '/categories');
 
 const selectDefault = { value: '', label: 'Категории' };
@@ -22,11 +28,7 @@ const categoriesSelect = computed(() => {
 });
 
 const { data: productsData } = await useFetch<GetProductsResponse>(API_URL + '/products', {
-  query: {
-    limit: 20,
-    offset: 0,
-    category_id,
-  },
+  query,
 });
 </script>
 
