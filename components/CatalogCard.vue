@@ -10,6 +10,8 @@ const image = computed(() => `url(${config.public.imageurl}${product.images[0]})
   <NuxtLink class="card" :to="`/catalog/${product.id}`">
     <div class="card__image">
       <span v-if="product.discount > 0" class="card__discount">-{{ product.discount }}%</span>
+      <span v-else></span>
+      <AddFavorite :id="product.id" :is-show="true" />
     </div>
     <div class="card__footer">
       <div class="card__name">{{ product.name }}</div>
@@ -38,6 +40,9 @@ const image = computed(() => `url(${config.public.imageurl}${product.images[0]})
   background-repeat: no-repeat;
   background-size: cover;
   background-image: v-bind(image);
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
 }
 
 .card__footer {
