@@ -1,8 +1,10 @@
 <script setup lang="ts">
-const favoritesStore = useFavoritesStore();
-favoritesStore.addFavorite(1);
+const favoriteStore = useFavoritesStore();
+await callOnce('fetchFavorites', () => favoriteStore.fetchFavorites(), {
+  mode: 'navigation',
+});
 </script>
 
 <template>
-  <div>{{ favoritesStore.favoriteIds[0] }}</div>
+  <div>{{ favoriteStore.favoriteIds[0] }}</div>
 </template>
