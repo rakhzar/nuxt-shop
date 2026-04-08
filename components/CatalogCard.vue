@@ -4,14 +4,15 @@ import type { Product } from '~/interfaces/product.interface';
 const product = defineProps<Product>();
 const config = useRuntimeConfig();
 const image = computed(() => `url(${config.public.imageurl}${product.images[0]})`);
+const isHovered = ref(false);
 </script>
 
 <template>
-  <NuxtLink class="card" :to="`/catalog/${product.id}`">
+  <NuxtLink class="card" :to="`/catalog/${product.id}`" @mouseenter="isHovered = true" @mouseleave="isHovered = false">
     <div class="card__image">
       <span v-if="product.discount > 0" class="card__discount">-{{ product.discount }}%</span>
       <span v-else></span>
-      <AddFavorite :id="product.id" :is-show="true" />
+      <AddFavorite :id="product.id" :is-show="isHovered" />
     </div>
     <div class="card__footer">
       <div class="card__name">{{ product.name }}</div>
