@@ -12,7 +12,7 @@ const isHovered = ref(false);
     <div class="card__image">
       <span v-if="product.discount > 0" class="card__discount">-{{ product.discount }}%</span>
       <span v-else></span>
-      <AddFavorite :id="product.id" :is-show="isHovered" />
+      <AddFavorite :id="product.id" :is-shown="isHovered" />
     </div>
     <div class="card__footer">
       <div class="card__name">{{ product.name }}</div>
