@@ -1,28 +1,11 @@
 <script setup lang="ts">
-import type { GetCategoriesResponse } from '~/interfaces/category.interface';
 import type { GetProductsResponse } from '~/interfaces/product.interface';
 
 const { category_id, query } = useCatalogFilters();
-
 const config = useRuntimeConfig();
-const API_URL = config.public.apiurl;
+const { options: categoriesSelect } = await useCategoriesSelect(config.public.apiurl);
 
-const { data } = await useFetch<GetCategoriesResponse>(API_URL + '/categories');
-
-const selectDefault = { value: '', label: 'Категории' };
-
-const categoriesSelect = computed(() => {
-  return data.value
-    ? data.value?.categories
-        .map((c) => ({
-          value: c.id.toString(),
-          label: c.name,
-        }))
-        .concat(selectDefault)
-    : [selectDefault];
-});
-
-const { data: productsData } = await useFetch<GetProductsResponse>(API_URL + '/products', {
+const { data: productsData } = await useFetch<GetProductsResponse>(config.public.apiurl + '/products', {
   key: 'get-products',
   query,
 });
