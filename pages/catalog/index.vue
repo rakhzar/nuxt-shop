@@ -4,7 +4,7 @@ import type { GetProductsResponse } from '~/interfaces/product.interface';
 
 const config = useRuntimeConfig();
 const API_URL = config.public.apiurl;
-const select = ref('');
+const category_id = ref('');
 
 const { data } = await useFetch<GetCategoriesResponse>(API_URL + '/categories');
 
@@ -25,6 +25,7 @@ const { data: productsData } = await useFetch<GetProductsResponse>(API_URL + '/p
   query: {
     limit: 20,
     offset: 0,
+    category_id,
   },
 });
 </script>
@@ -34,7 +35,7 @@ const { data: productsData } = await useFetch<GetProductsResponse>(API_URL + '/p
     <h1 class="left">Католог товаров</h1>
     <div class="catalog">
       <div class="catalog__filter">
-        <SelectField v-model="select" :options="categoriesSelect" />
+        <SelectField v-model="category_id" :options="categoriesSelect" />
       </div>
       <div class="catalog__grid">
         <CatalogCard v-for="product in productsData?.products" v-bind="product" :key="product.id" />
@@ -56,7 +57,7 @@ const { data: productsData } = await useFetch<GetProductsResponse>(API_URL + '/p
 .catalog__grid {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 70px 24px;
 }
 </style>
