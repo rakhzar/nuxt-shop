@@ -2,15 +2,10 @@
 import type { GetCategoriesResponse } from '~/interfaces/category.interface';
 import type { GetProductsResponse } from '~/interfaces/product.interface';
 
+const { category_id, query } = useCatalogFilters();
+
 const config = useRuntimeConfig();
 const API_URL = config.public.apiurl;
-const category_id = ref('');
-
-const query = computed(() => ({
-  limit: 20,
-  offset: 0,
-  category_id: category_id.value || undefined,
-}));
 
 const { data } = await useFetch<GetCategoriesResponse>(API_URL + '/categories');
 
@@ -28,6 +23,7 @@ const categoriesSelect = computed(() => {
 });
 
 const { data: productsData } = await useFetch<GetProductsResponse>(API_URL + '/products', {
+  key: 'get-products',
   query,
 });
 </script>
