@@ -2,10 +2,11 @@
 import type { GetProductsResponse } from '~/interfaces/product.interface';
 
 const config = useRuntimeConfig();
+const API_URL = config.public.apiurl;
 const { category_id, search, query } = useCatalogFilters();
-const { options: categoriesSelect } = await useCategoriesSelect(config.public.apiurl);
+const { options: categoriesSelect } = await useCategoriesSelect(API_URL);
 
-const { data: productsData } = await useFetch<GetProductsResponse>(config.public.apiurl + '/products', {
+const { data: productsData } = await useFetch<GetProductsResponse>(API_URL + '/products', {
   key: 'get-products',
   query,
 });
