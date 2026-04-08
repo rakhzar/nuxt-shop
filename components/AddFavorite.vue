@@ -1,12 +1,13 @@
 <script setup lang="ts">
-const { id, isShow } = defineProps<{
+const { id, isShown } = defineProps<{
   id: number;
-  isShow: boolean;
+  isShown: boolean;
 }>();
+const favoriteStore = useFavoritesStore();
 </script>
 
 <template>
-  <button v-show="isShow" class="fav-button">
+  <button v-show="isShown || favoriteStore.isFavorite(id)" class="fav-button" @click.stop.prevent="() => favoriteStore.toggleFavorite(id)">
     <Icon name="icons:favorite-add" size="19px" />
   </button>
 </template>
