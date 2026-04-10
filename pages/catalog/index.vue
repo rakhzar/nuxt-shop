@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import type { GetProductsResponse } from '~/interfaces/product.interface';
 
-const config = useRuntimeConfig();
-const API_URL = config.public.apiurl;
+const API_URL = useAPI();
 const { category_id, search, query } = useCatalogFilters();
 const { options: categoriesSelect } = await useCategoriesSelect(API_URL);
 
