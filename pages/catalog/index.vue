@@ -5,6 +5,12 @@ const API_URL = useAPI();
 const { category_id, search, query } = useCatalogFilters();
 const { options: categoriesSelect } = await useCategoriesSelect(API_URL);
 
+useSeoMeta({
+  title: 'Католог товаров',
+  description: 'Католог товаров магазина Shoppe с ювелирными изделиями',
+  ogDescription: 'Католог товаров магазина Shoppe с ювелирными изделиями',
+});
+
 const { data: productsData } = await useFetch<GetProductsResponse>(API_URL + '/products', {
   key: 'get-products',
   query,
