@@ -3,7 +3,7 @@ import { defineStore } from 'pinia';
 export const useAuthStore = defineStore('auth', () => {
   const token = ref<string | undefined>();
 
-  function getToken(value: string) {
+  function setToken(value: string) {
     token.value = value;
   }
 
@@ -11,5 +11,5 @@ export const useAuthStore = defineStore('auth', () => {
     token.value = undefined;
   }
 
-  return { token, getToken, clearToken };
+  return { token, setToken, clearToken };
 });
