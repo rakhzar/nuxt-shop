@@ -25,7 +25,15 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      link: [{ rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css' }],
+      title: 'Магазин Shoppe',
+      htmlAttrs: {
+        lang: 'ru',
+      },
+      link: [
+        { rel: 'icon', type: 'image/png', href: '/favicon-32x32.png' },
+        { rel: 'manifest', href: '/manifest.webmanifest', crossorigin: 'anonymous' },
+        { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css' },
+      ],
     },
   },
   icon: {
