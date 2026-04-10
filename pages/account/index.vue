@@ -2,8 +2,12 @@
 definePageMeta({
   middleware: 'auth',
 });
+
+const authStore = useAuthStore();
 </script>
 
 <template>
-  <div>Account</div>
+  <div>
+    <NuxtLink to="/" @click="authStore.clearToken">Выход</NuxtLink>
+  </div>
 </template>
