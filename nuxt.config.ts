@@ -2,10 +2,10 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   runtimeConfig: {
-    token: process.env.NUXT_TOKEN,
+    token: '',
     public: {
-      apiurl: process.env.NUXT_PUBLIC_APIURL || 'http://localhost:3000/api',
-      imageurl: process.env.NUXT_PUBLIC_IMAGEURL || 'http://localhost:3000',
+      apiurl: '',
+      imageurl: '',
     },
   },
   vite: {
