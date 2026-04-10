@@ -14,10 +14,8 @@ async function login() {
       password: password.value,
     },
   });
-  if (data.token) {
-    authStore.setToken(data.token);
-    navigateTo('/account');
-  }
+  authStore.setToken(data.token);
+  navigateTo('/account');
 }
 </script>
 
