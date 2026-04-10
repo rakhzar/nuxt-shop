@@ -14,8 +14,10 @@ async function login() {
       password: password.value,
     },
   });
-  authStore.setToken(data.token);
-  console.log(data);
+  if (data.token) {
+    authStore.setToken(data.token);
+    navigateTo('/account');
+  }
 }
 </script>
 
