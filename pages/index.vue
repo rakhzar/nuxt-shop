@@ -4,9 +4,9 @@
 // }
 
 useSeoMeta({
-  title: 'Магазин Shoppe',
-  description: 'Магазин Shoppe с ювелирными изделиями',
-  ogDescription: 'Магазин Shoppe с ювелирными изделиями',
+  title: 'Главная магазина',
+  description: 'Главная магазина с ювелирными изделиями',
+  ogDescription: 'Главная магазина с ювелирными изделиями',
 });
 </script>
 
