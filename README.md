@@ -2,6 +2,21 @@
 
 Интернет-магазин на **Nuxt 3** + **TypeScript**. Пет-проект для отработки стека: интерфейсы, стейт, интеграция с API.
 
+## 📸 Скриншоты
+
+### 🔐 Вход в систему
+
+![Авторизация](/assets/screenshots/login.png)
+
+### 🛍️ Каталог товаров
+
+![Каталог товаров](/assets/screenshots/shop-catalog.png)
+![Каталог товаров 2](/assets/screenshots/shop-catalog-2.png)
+
+### 👤 Личный кабинет
+
+![Личный кабинет](/assets/screenshots/account.png)
+
 ## 🛠 Стек
 
 - **Framework:** Nuxt 4 (Vue 3)
