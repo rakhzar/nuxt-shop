@@ -56,6 +56,16 @@ export default defineNuxtConfig({
       changefreq: 'weekly',
     },
   },
-  modules: ['@nuxt/eslint', '@nuxt/fonts', '@nuxt/image', '@nuxt/scripts', '@nuxt/icon', '@pinia/nuxt', 'pinia-plugin-persistedstate/nuxt', '@nuxtjs/sitemap'],
+  modules: [
+    '@nuxt/eslint',
+    '@nuxt/fonts',
+    '@nuxt/image',
+    '@nuxt/scripts',
+    '@nuxt/icon',
+    '@pinia/nuxt',
+    'pinia-plugin-persistedstate/nuxt',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots',
+  ],
   css: ['~/assets/styles/main.css'],
 });
