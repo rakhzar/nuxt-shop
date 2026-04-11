@@ -1,6 +1,6 @@
 # 🛍️ Nuxt Shop
 
-Интернет-магазин на **Nuxt 3** + **TypeScript**. Пет-проект для отработки стека: интерфейсы, стейт, интеграция с API.
+Интернет-магазин на **Nuxt 4** + **TypeScript**. Пет-проект для отработки стека: интерфейсы, стейт, интеграция с API.
 
 ## 📸 Скриншоты
 
@@ -66,7 +66,7 @@
 # 1. Клонирование
 
 ```bash
-git clone <ссылка-на-репозиторий>
+git clone https://github.com/rakhzar/nuxt-shop.git
 cd nuxt-shop
 ```
 
@@ -82,4 +82,4 @@ npm install
 npm run dev
 ```
 
-# → Откроется http://localhost:3001
+## → Откроется http://localhost:3001
