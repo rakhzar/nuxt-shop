@@ -1,75 +1,68 @@
-# Nuxt Minimal Starter
+# 🛍️ Nuxt Shop
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Интернет-магазин на **Nuxt 3** + **TypeScript**. Пет-проект для отработки стека: интерфейсы, стейт, интеграция с API.
 
-## Setup
+## 🛠 Стек
 
-Make sure to install dependencies:
+- **Framework:** Nuxt 4 (Vue 3)
+- **Language:** TypeScript
+- **State:** Pinia (+ Persisted State)
+- **Styling:** CSS
+- **API:** REST, $fetch, useFetch, useDebounceFn
+- **Auth:** Token-based (localStorage)
+- **Icons:** Nuxt Icon
+
+## 📦 Функционал
+
+- ✅ Каталог товаров с фильтрацией
+- ✅ Избранное (синхронизация с API)
+- ✅ Авторизация (JWT)
+- ✅ Личный кабинет
+
+## 🏗 Архитектура
+
+Проект построен по модульному принципу с чётким разделением ответственности. Nuxt 3 работает в **SPA-режиме** (клиентский рендеринг).
+
+```
+├── pages/ # Экраны и маршруты (File-based routing)
+├── components/ # UI-компоненты (кнопки, карточки, формы)
+├── composables/ # Бизнес-логика и работа с API ($fetch, хуки)
+├── stores/ # Глобальное состояние (Pinia + Persisted State)
+├── interfaces/ # TypeScript типы для API-ответов и форм
+├── layouts/ # Общие обёртки страниц (Header, Footer, Nav)
+├── middleware/ # Клиентская защита роутов (проверка токена)
+└── assets/ # Глобальные стили, шрифты, иконки
+```
+
+**Ключевые принципы:**
+
+- 🔹 **TypeScript-first:** Строгая типизация данных через `interfaces/`. Нет `any`, есть контракт.
+- 🔹 **Стейт и API:** Вся логика работы с данными инкапсулирована в `stores/` и `composables/`. Компоненты только отображают.
+- 🔹 **SPA-режим:** Клиентский рендеринг, быстрая навигация без перезагрузки страницы.
+- 🔹 **Чистые компоненты:** UI не знает про API. Данные приходят пропсами или из стора.
+- 🔹 **Безопасность роутов:** `middleware/` блокирует доступ к личному кабинету без валидного токена.
+
+# 🚀 Запуск проекта
+
+**Требования:** Node.js 20+ (рекомендуется 22+)
+
+# 1. Клонирование
 
 ```bash
-# npm
+git clone <ссылка-на-репозиторий>
+cd nuxt-shop
+```
+
+# 2. Установка зависимостей
+
+```bash
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+# 3. Запуск в режиме разработки
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+# → Откроется http://localhost:3001
