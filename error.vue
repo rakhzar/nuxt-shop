@@ -28,6 +28,7 @@ function goHome() {
   align-items: center;
   justify-content: center;
   gap: 24px;
+  margin-top: 270px;
 }
 
 .error__message {
