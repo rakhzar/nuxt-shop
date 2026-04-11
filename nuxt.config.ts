@@ -48,6 +48,9 @@ export default defineNuxtConfig({
   routeRules: {
     '/catalog': { sitemap: { changefreq: 'daily' } },
   },
+  robots: {
+    disallow: ['/account'],
+  },
   sitemap: {
     sources: ['/api/sitemap/urls'],
     defaults: {
@@ -56,16 +59,6 @@ export default defineNuxtConfig({
       changefreq: 'weekly',
     },
   },
-  modules: [
-    '@nuxt/eslint',
-    '@nuxt/fonts',
-    '@nuxt/image',
-    '@nuxt/scripts',
-    '@nuxt/icon',
-    '@pinia/nuxt',
-    'pinia-plugin-persistedstate/nuxt',
-    '@nuxtjs/sitemap',
-    '@nuxtjs/robots',
-  ],
+  modules: ['@nuxt/eslint', '@nuxt/fonts', '@nuxt/image', '@nuxt/scripts', '@nuxt/icon', '@pinia/nuxt', 'pinia-plugin-persistedstate/nuxt', '@nuxtjs/sitemap', '@nuxtjs/robots'],
   css: ['~/assets/styles/main.css'],
 });
