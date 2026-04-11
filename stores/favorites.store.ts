@@ -41,7 +41,16 @@ export const useFavoritesStore = defineStore(
       });
     }
 
-    return { favoriteIds, toggleFavorite, isFavorite };
+    async function restore(email: string) {
+      const data = await $fetch<number[]>('/api/favorites', {
+        query: {
+          email: email,
+        },
+      });
+      favoriteIds.value = data;
+    }
+
+    return { favoriteIds, toggleFavorite, isFavorite, restore };
   },
   {
     persist: true,
