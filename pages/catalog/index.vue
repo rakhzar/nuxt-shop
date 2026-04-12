@@ -1,10 +1,8 @@
 <script setup lang="ts">
 import type { GetProductsResponse } from '~/interfaces/product.interface';
-
 const API_URL = useAPI();
 const { category_id, search, query } = useCatalogFilters();
 const { options: categoriesSelect } = await useCategoriesSelect(API_URL);
-usePageMeta('Католог товаров', 'Католог товаров магазина Shoppe с ювелирными изделиями');
 
 const { data: productsData } = await useFetch<GetProductsResponse>(API_URL + '/products', {
   key: 'get-products',
