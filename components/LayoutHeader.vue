@@ -9,16 +9,16 @@
       <HeaderIcons />
     </div>
   </header>
+  <hr class="header__bottom-hr" />
 </template>
 
 <style scoped>
 .header {
   padding: 0 16px;
-  margin: 48px auto 0px;
-  max-width: 1232px;
+  margin: 48px auto 0;
+  max-width: 1248px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid var(--color-gray);
 }
 
 .header__content {
@@ -32,5 +32,13 @@
   height: 17px;
   align-self: flex-start;
   margin-top: 4px;
+}
+
+.header__bottom-hr {
+  border: none;
+  border-bottom: 1px solid var(--color-gray);
+  height: 1px;
+  margin: 0 auto;
+  max-width: 1216px;
 }
 </style>
