@@ -14,8 +14,8 @@
 <style scoped>
 .header {
   padding: 0 16px;
-  margin: 48px auto 17px;
-  max-width: 1248px;
+  margin: 48px auto 0px;
+  max-width: 1232px;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid var(--color-gray);
