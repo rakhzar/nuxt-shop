@@ -1,10 +1,6 @@
 <script setup lang="ts">
 import type { LoginResponse } from '~/interfaces/auth.interface';
-useSeoMeta({
-  title: 'Авторизация',
-  description: 'Страница авторизации для доступа к личному кабинету',
-  ogDescription: 'Страница авторизации для доступа к личному кабинету',
-});
+usePageMeta('Авторизация', 'Страница авторизации для доступа к личному кабинету');
 
 const API_URL = useAPI();
 const email = ref<string | undefined>();

@@ -2,12 +2,7 @@
 import type { GetProductsResponse } from '~/interfaces/product.interface';
 const API_URL = useAPI();
 const { query } = useCatalogFilters();
-
-useSeoMeta({
-  title: 'Главная магазина',
-  description: 'Главная магазина с ювелирными изделиями',
-  ogDescription: 'Главная магазина с ювелирными изделиями',
-});
+usePageMeta('Главная магазина', 'Главная магазина с ювелирными изделиями');
 
 const { data: productsData } = await useFetch<GetProductsResponse>(API_URL + '/products', {
   key: 'get-products',

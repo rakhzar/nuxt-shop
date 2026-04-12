@@ -1,7 +1,5 @@
 <script setup lang="ts">
-useSeoMeta({
-  title: 'О магазине Shoppe',
-});
+usePageMeta('О магазине Shoppe', 'Информация о магазине Shoppe, его миссии и ценностях');
 </script>
 
 <template>

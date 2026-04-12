@@ -1,4 +1,5 @@
 <script setup lang="ts">
+usePageMeta('Личный кабинет', 'Личный кабинет пользователя с информацией и настройками');
 definePageMeta({
   middleware: 'auth',
 });

@@ -5,11 +5,7 @@ const route = useRoute();
 const API_URL = useAPI();
 
 const { data } = await useFetch<{ product: Product }>(API_URL + '/products/' + route.params.id);
-
-useSeoMeta({
-  title: `Купить - ${data.value?.product.name}`,
-  description: data.value?.product.short_description,
-});
+usePageMeta(`Купить - ${data.value?.product.name}`, `${data.value?.product.short_description}`);
 </script>
 
 <template>

@@ -1,7 +1,5 @@
 <script setup lang="ts">
-useSeoMeta({
-  title: 'Корзина товаров',
-});
+usePageMeta('Корзина товаров', 'Корзина с выбранными товарами');
 </script>
 
 <template>
