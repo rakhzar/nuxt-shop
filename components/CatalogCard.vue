@@ -16,7 +16,7 @@ const isHovered = ref(false);
     </div>
     <div class="card__footer">
       <div class="card__name">{{ product.name }}</div>
-      <div class="card__price">$ {{ product.price }}</div>
+      <div class="card__price">$ {{ product.price }},00</div>
     </div>
   </NuxtLink>
 </template>
