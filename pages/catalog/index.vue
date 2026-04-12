@@ -39,6 +39,7 @@ const { data: productsData } = await useFetch<GetProductsResponse>(API_URL + '/p
 .catalog {
   display: flex;
   gap: 36px;
+  margin-bottom: 164px;
 }
 
 .catalog__filter {
