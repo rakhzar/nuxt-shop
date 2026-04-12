@@ -1,15 +1,6 @@
 <script setup lang="ts">
-import type { GetProductsResponse } from '~/interfaces/product.interface';
-const API_URL = useAPI();
-const { query } = useCatalogFilters();
 usePageMeta('Главная магазина', 'Главная магазина с ювелирными изделиями');
-
-const { data: productsData } = await useFetch<GetProductsResponse>(API_URL + '/products', {
-  key: 'get-products',
-  query,
-});
-
-const mainProducts = computed(() => productsData.value?.products?.slice(0, 6) ?? []);
+const { mainProducts } = useMainProducts();
 </script>
 
 <template>
