@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: {
-    enabled: true,
+    enabled: false,
 
     timeline: {
       enabled: true,
@@ -32,7 +32,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'Магазин Shoppe',
-      titleTemplate: '%s | Shoope',
+      titleTemplate: '%s | Shoppe',
       htmlAttrs: {
         lang: 'ru',
       },
