@@ -4,7 +4,7 @@ export const useMainProducts = () => {
   const API_URL = useAPI();
   const { query } = useCatalogFilters();
 
-  const { data: productsData } = useFetch<GetProductsResponse>(API_URL + '/products', {
+  const { data: productsData } = useFetch<GetProductsResponse>(`${API_URL}/products/`, {
     key: 'get-products',
     query,
   });
