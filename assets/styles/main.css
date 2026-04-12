@@ -24,7 +24,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1 {
+h1,
+h2 {
   color: var(--color-black);
   text-align: center;
   font-size: 27px;
