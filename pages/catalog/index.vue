@@ -62,6 +62,6 @@ const { data: productsData } = await useFetch<GetProductsResponse>(API_URL + '/p
   display: grid;
   width: 100%;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 70px 24px;
+  gap: 70px 12px;
 }
 </style>

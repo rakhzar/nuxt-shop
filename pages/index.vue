@@ -48,7 +48,7 @@ const mainProducts = computed(() => productsData.value?.products?.slice(0, 6) ??
   display: grid;
   width: 100%;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 70px 24px;
+  gap: 70px 12px;
   margin-bottom: 250px;
 }
 </style>
