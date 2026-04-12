@@ -1,19 +1,6 @@
 <script setup lang="ts">
-import type { Product } from '~/interfaces/product.interface';
 usePageMeta('Избранное', 'Избранные товары');
-
-const favoriteStore = useFavoritesStore();
-const API_URL = useAPI();
-const products = ref<Product[]>();
-
-watchEffect(async () => {
-  const data = await Promise.all(
-    favoriteStore.favoriteIds.map((id) => {
-      return $fetch<{ product: Product }>(API_URL + '/products/' + id);
-    })
-  );
-  products.value = data.map((el) => el.product);
-});
+const { products } = useFavoritesProducts();
 </script>
 
 <template>
