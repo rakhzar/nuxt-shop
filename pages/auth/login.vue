@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import type { LoginResponse } from '~/interfaces/auth.interface';
+useSeoMeta({
+  title: 'Авторизация',
+  description: 'Страница авторизации для доступа к личному кабинету',
+  ogDescription: 'Страница авторизации для доступа к личному кабинету',
+});
 
 const API_URL = useAPI();
 const email = ref<string | undefined>();
@@ -39,13 +44,16 @@ async function login() {
 </template>
 
 <style scoped>
+h1 {
+  margin-top: 129px;
+}
+
 .login-form {
   display: flex;
   gap: 70px;
   flex-direction: column;
   max-width: 500px;
-  margin: 0 auto;
-  margin-top: 64px;
+  margin: 64px auto 265px;
 }
 
 .login-form__field {
