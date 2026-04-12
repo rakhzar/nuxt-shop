@@ -18,9 +18,8 @@
 }
 
 main {
-  margin: 0 auto;
-  max-width: 1248px;
-  padding: 40px 16px;
+  margin: 15px auto 250px;
+  max-width: 1216px;
 }
 
 .page-enter-from,
