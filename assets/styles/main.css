@@ -8,6 +8,9 @@
   --color-white-light: #ffffff;
   --color-dark-gray-hover: #c9b99a;
   --color-white-stub: #f3f4f6;
+
+  --text-body-size: 16px;
+  --text-body-line: 169%;
 }
 
 *,

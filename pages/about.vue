@@ -66,8 +66,6 @@ usePageMeta('О магазине', 'Информация о магазине Sho
 
 .about__text {
   margin-top: 46px;
-  font-size: 16px;
-  line-height: 169%;
 }
 
 /* content */
@@ -97,8 +95,6 @@ usePageMeta('О магазине', 'Информация о магазине Sho
 
 .trends__list {
   margin-top: 16px;
-  font-size: 16px;
-  line-height: 167%;
 }
 
 /* made */
@@ -122,7 +118,19 @@ usePageMeta('О магазине', 'Информация о магазине Sho
 
 .made__text {
   margin-top: 48px;
-  font-size: 16px;
   line-height: 169%;
+}
+
+.about__text {
+  font-size: var(--text-body-size);
+  line-height: var(--text-body-line);
+}
+.trends__text {
+  font-size: var(--text-body-size);
+  line-height: var(--text-body-line);
+}
+.made__text {
+  font-size: var(--text-body-size);
+  line-height: var(--text-body-line);
 }
 </style>
