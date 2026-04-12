@@ -4,6 +4,10 @@
 
 ## 📸 Скриншоты
 
+### 🏠 Главная страница
+
+![Главная страница](/assets/screenshots/main.png)
+
 ### 🔐 Вход в систему
 
 ![Авторизация](/assets/screenshots/login.png)
