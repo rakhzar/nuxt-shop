@@ -18,7 +18,7 @@
 }
 
 main {
-  margin: 15px auto 250px;
+  margin: 15px auto 0;
   max-width: 1216px;
 }
 
