@@ -17,9 +17,10 @@
 ![Каталог товаров](/assets/screenshots/shop-catalog.png)
 ![Каталог товаров 2](/assets/screenshots/shop-catalog-2.png)
 
-### 👤 Личный кабинет
+## 📖 О магазине
 
-![Личный кабинет](/assets/screenshots/account.png)
+![О магазине](/assets/screenshots/shop-catalog.png)
+![О магазине 2](/assets/screenshots/shop-catalog-2.png)
 
 ## 🛠 Стек
 
