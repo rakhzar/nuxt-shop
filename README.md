@@ -19,8 +19,8 @@
 
 ## 📖 О магазине
 
-![О магазине](/assets/screenshots/shop-catalog.png)
-![О магазине 2](/assets/screenshots/shop-catalog-2.png)
+![О магазине](/assets/screenshots/about.png)
+![О магазине 2](/assets/screenshots/about2.png)
 
 ## 🛠 Стек
 
