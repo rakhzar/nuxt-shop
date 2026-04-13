@@ -14,13 +14,8 @@
 
 ### 🛍️ Каталог товаров
 
-![Каталог товаров](/assets/screenshots/shop-catalog.png)
-![Каталог товаров 2](/assets/screenshots/shop-catalog-2.png)
-
-## 📖 О магазине
-
-![О магазине](/assets/screenshots/about.png)
-![О магазине 2](/assets/screenshots/about2.png)
+![Каталог товаров](/assets/screenshots/ab1.png)
+![Каталог товаров 2](/assets/screenshots/ab2.png)
 
 ## 🛠 Стек
 
